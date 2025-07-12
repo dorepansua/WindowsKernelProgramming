@@ -1,41 +1,34 @@
-# Prerequisites
-*.d
+# Visual Studio .vs folder
+.vs/
+**/.vs/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# IntelliSense and database files
+*.VC.db*
+*.opendb
+*.vsidx
+*.suo
+*.user
+*.sdf
+*.ipch
+*.log
+*.tlog
+*.lastbuildstate
+
+# Build output
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
+*.lib
+*.pdb
+*.ilk
+*.idb
+*.aps
+*.ncb
+*.cache
+*.tmp
 
-# debug information files
-*.dwo
+# Common build directories
+x64/
+x86/
+Debug/
+Release/
+build/
