@@ -2,8 +2,8 @@
 // begins and ends there.
 //
 
+#include <Windows.h>
 #include <stdio.h>
-#include <windows.h>
 
 #include "..\PriorityBooster\PriorityBooster\PriorityBoosterCommon.h"
 
