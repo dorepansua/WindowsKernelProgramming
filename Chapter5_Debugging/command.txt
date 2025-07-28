@@ -1,0 +1,44 @@
+ WinDbg Command Groups Cheat Sheet
+1. Process & Thread Information
+Command	Description
+!process 0 0	Lists all processes running in the system
+.process /p /r <addr>	Sets current process context (/p for current thread, /r to reload symbols)
+!thread	Displays info about the current thread
+~	Lists all threads in the current process
+~#	Shows the current thread (marked with .)
+!teb	Displays TEB (Thread Environment Block) for current thread
+
+2. Modules & Symbols
+Command	Description
+lm	Lists all loaded modules
+.symfix	Sets the symbol path to Microsoft’s symbol server
+.sympath	Displays or sets the current symbol search path
+.reload /f	Forces symbol reload
+
+3. Memory & Address Inspection
+Command	Description
+db <addr>	Displays memory as bytes
+du <addr>	Displays memory as Unicode strings
+dd <addr>	Displays memory as double words (32-bit)
+dq <addr>	Displays memory as quad words (64-bit)
+dt <module>!<struct>	Displays structure definition at an address
+
+4. Disassembly & Execution Control
+Command	Description
+u <addr>	Unassembles instructions at an address
+p	Step over instruction
+t	Step into instruction
+g	Go (continue execution)
+bp <addr>	Set breakpoint at an address
+
+5. System Information
+Command	Description
+!handle	Lists open handles
+!drivers	Lists loaded drivers
+!verifier	Shows driver verifier settings
+
+6. Utility & Debugger Control
+Command	Description
+.cls or Clear Screen (via menu)	Clears command output (Classic has no hotkey)
+.reload	Reloads modules and symbols
+.help	Displays WinDbg help
